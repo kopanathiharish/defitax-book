@@ -38,13 +38,11 @@ Implementation of the logic and building various pallets to create and handle ex
 4.  Technologies and Tools
 
 
-| Frontend | Backend | 
-|---------|---------|
-| ReactJS, Javascript, Bootstrap, Web3js, Tailwind CSS    | RUST, Substrate , Python(if needed)  |
+| Frontend | Backend | Indexing and API |  
+|---------|---------|---------|
+| ReactJS, Javascript, Bootstrap, Web3js, Tailwind CSS    | RUST, Substrate , Python(if needed)  |SubQuery, GRAPHQL, REST Technologies     |    
 
-| Indexing and API |  |
-|---------|---------|
-| SubQuery, GRAPHQL, REST Technologies     |    |
+
 
 ---
 
