@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Chapter 1</title>
+        <title>Defi Tax Road Map</title>
 
 
         <!-- Custom HTML head -->
@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="chapter_1.html" class="active"><strong aria-hidden="true">1.</strong> Chapter 1</a></li><li class="chapter-item expanded affix "><li class="part-title">Summary</li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Defi_Tax_Road_Map.html" class="active"><strong aria-hidden="true">1.</strong> Defi Tax Road Map</a></li><li class="chapter-item expanded "><a href="2Explained_about_crypto-tax.html"><strong aria-hidden="true">2.</strong> Explained about crypto tax</a></li><li class="chapter-item expanded "><a href="4Technical.html"><strong aria-hidden="true">3.</strong> Technical</a></li><li class="chapter-item expanded "><a href="3Tax_in_USA.html"><strong aria-hidden="true">4.</strong> Tax in usa</a></li><li class="chapter-item expanded "><a href="About_web.html"><strong aria-hidden="true">5.</strong> About web</a></li><li class="chapter-item expanded "><a href="5Crypto_mining_calculation.html"><strong aria-hidden="true">6.</strong> Crypto Mining Calculation</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -144,13 +144,84 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="chapter-1"><a class="header" href="#chapter-1">Chapter 1</a></h1>
+                        <h1 id="roadmap"><a class="header" href="#roadmap">RoadMap</a></h1>
+<ul>
+<li>DeFiTax </li>
+<li>Decentralized Tax Calculator(USA)</li>
+</ul>
+<hr />
+<ol>
+<li>
+<p>Purpose
+Building a decentralized tax calculating platform on the Polkadot framework which powers the individual by giving the entire taxable calculation on their defi(transactions, staking) activities on crypto assets. Our platform will provide the users with the one-stop solution for their tax estimate of all the transactions and staking activities. All the complex tax calculations are handled by our tax engine. </p>
+</li>
+<li>
+<p>Outline of Work</p>
+</li>
+</ol>
+<p><code>Tax Engine implementation:</code> Working on the designing the tax engine for laying out the core logic, handling the tax calculation</p>
+<ul>
+<li><code>Indexing solution implementation for Subscan:</code> Using the SubQuery SDK and platform for building various indexing solution for various transactions and hosting respectively</li>
+<li><code>Blockchain: </code>
+Implementation of the logic and building various pallets to create and handle extrinsics </li>
+<li><code>UI implementation:</code> Creating the frontend app for the users to interact and submit their request for the tax estimate</li>
+</ul>
+<hr />
+<ol start="3">
+<li>Expected Execution Timeline </li>
+</ol>
+<ul>
+<li>
+<p>Week 1 &amp; 2  -  Laying out the plan and designing the end-to-end architecture. </p>
+</li>
+<li>
+<p>Week 3 &amp; 4  -  Start building the indexer and working on the tax engine</p>
+</li>
+<li>
+<p>Week 5 &amp; 6 -  Creating blockchain and writing the core logic for the extrinsics      and continue to work on the tax engine</p>
+</li>
+<li>
+<p>Week 7 &amp; 8 -  UI integration with indexer and smart contract </p>
+</li>
+<li>
+<p>Week 9 &amp; 10-  Integrating the app with tax engine and working on testnet </p>
+</li>
+<li>
+<p>Week 11    Implementation in mainnet</p>
+</li>
+<li>
+<p>Week 12  -  Bug Ironing + Documentation (Gitbook) </p>
+</li>
+</ul>
+<hr />
+<ol start="4">
+<li>Technologies and Tools</li>
+</ol>
+<div class="table-wrapper"><table><thead><tr><th>Frontend</th><th>Backend</th></tr></thead><tbody>
+<tr><td>ReactJS, Javascript, Bootstrap, Web3js, Tailwind CSS</td><td>RUST, Substrate , Python(if needed)</td></tr>
+</tbody></table>
+</div><div class="table-wrapper"><table><thead><tr><th>Indexing and API</th><th></th></tr></thead><tbody>
+<tr><td>SubQuery, GRAPHQL, REST Technologies</td><td></td></tr>
+</tbody></table>
+</div>
+<hr />
+<ol start="6">
+<li>Future</li>
+</ol>
+<ul>
+<li>Adding more utility for the native token</li>
+<li>Storing the snapshot of the report for taxable income generated as NFT </li>
+<li>Expanding to different countries </li>
+</ul>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
+                            <a rel="next" href="2Explained_about_crypto-tax.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -159,6 +230,9 @@
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
+                    <a rel="next" href="2Explained_about_crypto-tax.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
             </nav>
 
         </div>

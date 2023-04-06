@@ -1,6 +1,6 @@
 # About web
 
-Although the definition of the web varies from person to person, it all begins with a movement away from the centralization of services like search engines, social media, and chat applications that are dependent on a single organization to function, which can be easily abused as countless cases demonstrate.
+Although the definition of the web varies from person to person, it all begins with a movement away from the centralization of services like search engines, social media, and chat applications that are dependent on a single organization to function, which can be easily abused as countless cases demonstrate.md
 
 The internet today has been transformed into a top-down system or surveillance capitalism dominated by a few big players whose power is derived from their control over your data.
 

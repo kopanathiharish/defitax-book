@@ -1,0 +1,249 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Explained about crypto tax</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = null;
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Defi_Tax_Road_Map.html"><strong aria-hidden="true">1.</strong> Defi Tax Road Map</a></li><li class="chapter-item expanded "><a href="2Explained_about_crypto-tax.html" class="active"><strong aria-hidden="true">2.</strong> Explained about crypto tax</a></li><li class="chapter-item expanded "><a href="4Technical.html"><strong aria-hidden="true">3.</strong> Technical</a></li><li class="chapter-item expanded "><a href="3Tax_in_USA.html"><strong aria-hidden="true">4.</strong> Tax in usa</a></li><li class="chapter-item expanded "><a href="About_web.html"><strong aria-hidden="true">5.</strong> About web</a></li><li class="chapter-item expanded "><a href="5Crypto_mining_calculation.html"><strong aria-hidden="true">6.</strong> Crypto Mining Calculation</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title"></h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="explaination-all-about-tax-in-crypto"><a class="header" href="#explaination-all-about-tax-in-crypto">Explaination all about TAX in crypto</a></h1>
+<h3 id="cryptocurrency-treated-as-per-irs-"><a class="header" href="#cryptocurrency-treated-as-per-irs-"><code>Cryptocurrency treated as per IRS :</code></a></h3>
+<p>For taxation purposes, cryptocurrency is regarded as property: For taxation purposes, the IRS sees cryptocurrencies as property rather than money. This means that you must determine and disclose any capital gains or losses each time you sell or exchange cryptocurrencies.</p>
+<p><code>The purchasing, selling, and trading of cryptocurrencies are all taxable events:</code> Any gains or losses from the sale or exchange of cryptocurrencies must be disclosed on your tax return. Receiving cryptocurrencies in exchange for goods or services is likewise regarded as a taxable event.</p>
+<p><code>Trades between cryptocurrencies are taxable:</code> A taxable event is when you trade one kind of cryptocurrency for another. By comparing the fair market value of the cryptocurrency you received to the cost basis of the cryptocurrency you gave up, the capital gain or loss is determined.</p>
+<p><code>Keeping records is crucial:</code> You must maintain thorough records of each transaction if you want to report your cryptocurrency activities accurately. This contains the time, sum, and cryptocurrency value at the moment of the transaction.</p>
+<p><code>Depending on transaction volume, reporting requirements change:</code> You must fill out <code>IRS Form 8949 and Schedule D</code> to report your bitcoin transactions if you make more than $20,000 in sales and 200 or more transactions in a single calendar year.</p>
+<p><code>Penalties may apply if cryptocurrency transactions are not reported:</code> You risk paying fines and interest on any unpaid taxes if you fail to record cryptocurrency transactions or underreport your revenue.</p>
+<h2 id="what-is-crypto"><a class="header" href="#what-is-crypto">what is crypto?</a></h2>
+<p>Crypto tax is the tax implications for the profit generated via cryptocurrencies. Any crypto has been classified as an asset similar to the property by the IRS (Internal Revenue Service) and is taxed as such.</p>
+<h2 id="what-are-taxable-events"><a class="header" href="#what-are-taxable-events">What are Taxable Events?</a></h2>
+<p>Taxable events refer to the actions taken in cryptocurrencies that incur the tax.</p>
+<p>Crypto sale for fiat currencies.</p>
+<p>Trading crypto to crypto.</p>
+<p>Using crypto for retail transactions such as the purchase or sale of goods.</p>
+<p>Crypto incomes via Mining, Staking, Airdrop, Farming, etc.</p>
+<p><code>Scenario 1:</code>
+User A bought 1 Dot from an exchange at $100 and sells at $200. As he converted his crypto to fiat currency and hence it triggers the taxable event.</p>
+<p>User A is liable to pay tax on ($200-$100) i.e. $100.</p>
+<p>If User A sells the Dot at $50 which incurs the loss of $50 capital loss and this reduces the user’s taxable income.</p>
+<p>Note* Tax brackets will be different depending on various factors like country, long term/short term, single/married, etc.</p>
+<p><code>Scenario 2:</code>
+User B purchases 10 Dot at $1000 and later on trades all 10 Dot for 5KSM at the rate when 10 Dot was worth $1500.</p>
+<p>Trading crypto to crypto is a taxable event and in this scenario User, B incurs the capital gain of $500.</p>
+<p><code>Scenario 3:</code>
+User C bought 1 Dot at $10 and she holds that for 4 years. When she found the Dot value went to $1500 she got excited and bought a new laptop for her.</p>
+<p>In this scenario, she incurs $1490 capital gain and she is liable to report this gain on her taxes.</p>
+<p><code>Scenario 4:</code>
+User D has 50 Dots and through farming, he made upto 25 Dot and currently he is holding 75 Dots which he sells and get ample profit.</p>
+<p>At the time of buying 50 Dots, it cost the user $500. And he sold his 75 Dots at $3000 and so he got $2500 capital gain which is taxable.</p>
+<p><code>The complexity behind the crypto Tax</code></p>
+<p>Crypto tax calculation is very complex as we have scenarios where traders trade a lot many times throughout the day. Tracking the cost basis, fair market value, capital gain, or loss is a bit complicated. Our tax engine handles this complexity and makes sure that you are paying the tax that is needed to be paid.</p>
+<p>Some background for the scenario about how we are planning to solve this. Assuming that a non-custodial wallet is being used by a user for all his transactions, it becomes a big dilemma to understand his transactions for the purpose of the tax.</p>
+<p>He may be transferring from his one wallet to another wallet, then the tax engine needs to make sure that he is not taxed. So he may have several wallets mixed with both custodial and non-custodial wallets.</p>
+<p><code>Our blockchain application(dApp) helped sort out this complex issue, thanks to our research team(which includes an experienced CPA and analysts) who are researching as I am typing this to improve the customer overheads.</code></p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="Defi_Tax_Road_Map.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="4Technical.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="Defi_Tax_Road_Map.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="4Technical.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
