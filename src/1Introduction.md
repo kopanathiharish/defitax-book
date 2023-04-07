@@ -17,4 +17,7 @@ For our future mission we have several other aspects in the pipeline, like makin
 
 We also have some utility planned for the benefit of our native token holder built as a parachain on polkadot.
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
