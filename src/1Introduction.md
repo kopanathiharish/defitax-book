@@ -18,9 +18,3 @@ For our future mission we have several other aspects in the pipeline, like makin
 We also have some utility planned for the benefit of our native token holder built as a parachain on polkadot.
 
 
-### [Explained about crypto tax](2Explained_about_crypto-tax.md)
-
-### [Technical](4Technical.md)
-### [About web](About_web.md)
-### [Tax in usa](3Tax_in_USA.md)
-### [Crypto Mining Calculation](5Crypto_mining_calculation.md)
